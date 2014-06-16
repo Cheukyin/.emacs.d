@@ -142,8 +142,8 @@
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface
 ;;----------------------------------------------------------------------------
-(if (file-readable-p (expand-file-name "~/.custom.el"))
-     (load-file (expand-file-name "~/.custom.el")))
+(if (file-readable-p (expand-file-name "~/.emacs.d/.custom.el"))
+     (load-file (expand-file-name "~/.emacs.d/.custom.el")))
 
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
