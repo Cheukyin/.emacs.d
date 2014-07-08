@@ -135,9 +135,12 @@
 (require 'init-sr-speedbar)
 (require 'init-smartparens)
 (require 'init-slime)
-(when *emacs24* (require 'init-company))
+;(when *emacs24* (require 'init-company))
 (require 'init-stripe-buffer)
 (require 'init-elnode)
+
+(require 'init-powerline)
+(require 'init-auto-complete)
 
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface
@@ -179,3 +182,11 @@
 ;;; no-byte-compile: t
 ;;; End:
 (put 'erase-buffer 'disabled nil)
+
+
+;;;cpputils-cmake Config
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (if (derived-mode-p 'c-mode 'c++-mode)
+                (cppcm-reload-all)
+              )))
