@@ -113,6 +113,8 @@ These tools are *OPTIONAL*. Your Emacs will NOT crash if they are not installed.
 - If you use `cpputils-cmake` and `cmake`, `cpputils-cmake` will do all the set up for you. You don't need read next item!
 - If you use `company-clang`, add `(setq company-clang-arguments '("-I/example1/dir" "-I/example2/dir"))` into ~/.emacs.d/init.el
 
+- P.S.  Abandon 'company-mode', Use 'auto-complete-mode' now, see the commments in 'init-auto.complete.el'
+
 ** [[https://addons.mozilla.org/en-us/firefox/addon/mozrepl/][MozRepl (Firefox addon)]]
 - needed by [[http://www.emacswiki.org/emacs/MozRepl][MozRepl]]
 - used by Firefox
