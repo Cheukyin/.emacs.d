@@ -99,7 +99,7 @@ End of search list.
                )))
        #+END_SRC
 
-    You can put it into your .emacs file.
+    You can put it into your init-auto-complete.el file.
 
     Then code completion works just fine!
 
