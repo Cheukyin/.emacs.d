@@ -22,7 +22,6 @@ cookies
 /newsticker
 /ac-comphist.dat
 \#*
-/elpa
 eshell/
 semanticdb/
 *.swp
