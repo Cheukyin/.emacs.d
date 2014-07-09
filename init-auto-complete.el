@@ -63,4 +63,4 @@
 (my-ac-config)
 (ac-config-default)
 
-(provide 'init-company)
+(provide 'init-auto-complete)

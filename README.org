@@ -190,6 +190,9 @@ If you use `gnus` for email (Gmail, for example). Check ~/.emacs.d/init-gnus.el 
 
 To toggle Chinese input method (eim, for example), press `C-\` or run command `M-x toggle-input-method`.
 
+** evil-leader
+Configure your shotcuts in init-evil-leader.el.
+
 * My personal custom.el (OPTIONAL)
 It's publicized at [[http://blog.binchen.org/?p=430]]. It contains my personal stuff like color-theme and time locale.
 * About Emacs23
