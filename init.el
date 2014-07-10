@@ -146,6 +146,7 @@
 (require 'init-auto-complete)
 (require 'init-ecb)
 ;(require 'init-gdb-gui)
+(require 'init-smooth-scroll)
 
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface
