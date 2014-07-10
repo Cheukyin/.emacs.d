@@ -276,6 +276,8 @@ ARCHIVE is the string name of the package archive.")
 (if *emacs24* (require-package 'anaconda-mode))
 (require-package 'quack) ;; for scheme
 
+;(require-package 'ecb)
+
 ;; (require-package 'command-frequency)
 
 (provide 'init-elpa)

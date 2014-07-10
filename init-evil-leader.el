@@ -9,6 +9,10 @@
   "sf" 'find-file
   "vs" 'split-window-horizontally
   "sw" 'split-window-vertically
+  "es" 'ecb-show-ecb-windows
+  "eh" 'ecb-hide-ecb-windows
+  "ea" 'ecb-activate
+  "ed" 'ecb-deactivate
   "bs" 'switch-to-buffer)
 
 (provide 'init-evil-leader)
