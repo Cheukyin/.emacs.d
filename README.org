@@ -199,7 +199,7 @@ Make your emacs closer to IDE.
 The shortcuts for ecb have been set in init-ecb.el
 
 The layout of ECB can be modified in site-lisp/ecb/ecb-layout-defs.el
-And after you change the layout, you may `M-x ecb-byte-compile` to recompile the file
+And after you change the layout, you may `M-x ecb-byte-compile` to recompile the [yas] elisp error! Symbol's function definition is void: ca-with-commentle
 
 If you want to activate ECB, `M-x ecb-activate` or `,ea' , then , when emacs shuts down ,
 REMEMBER TO `m-X ECB-DEACTIVATE' OR `,ED` TO SHUTDOWN ECB
@@ -210,6 +210,10 @@ C-c C-i to input the path && C-j to insert it.
 ** Transparency
 You can configure your own window transparency in .custom.el
 
+** Clang-Completion
+You can use company-mode or auto-complete-mode.
+Comment out the "init-company" or "init-auto-complete" in init.el to choose either.
+The default is "company-mode"
 
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.

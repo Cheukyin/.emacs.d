@@ -510,36 +510,36 @@ by customize `cppcm-compile-list'."
     ;;                       ))))
 
 
-    (setq ac-clang-flags
-          (mapcar(lambda (item)(concat "-I" item))
-                 (split-string
-                  "
- /usr/include/c++/4.8
-/usr/include/i386-linux-gnu/c++/4.8
- /usr/include/c++/4.8/backward
- /usr/lib/gcc/i686-linux-gnu/4.8/include
- /usr/local/include
- /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
- /usr/include/i386-linux-gnu
- /usr/include
-"
-                  )))
-
-
-    (setq company-clang-arguments
-          (mapcar(lambda (item)(concat "-I" item))
-                 (split-string
-                  "
- /usr/include/c++/4.8
-/usr/include/i386-linux-gnu/c++/4.8
- /usr/include/c++/4.8/backward
- /usr/lib/gcc/i686-linux-gnu/4.8/include
- /usr/local/include
- /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
- /usr/include/i386-linux-gnu
- /usr/include
-"
-                  )))
+;    (setq ac-clang-flags
+;          (mapcar(lambda (item)(concat "-I" item))
+;                 (split-string
+;                  "
+; /usr/include/c++/4.8
+;/usr/include/i386-linux-gnu/c++/4.8
+; /usr/include/c++/4.8/backward
+; /usr/lib/gcc/i686-linux-gnu/4.8/include
+; /usr/local/include
+; /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
+; /usr/include/i386-linux-gnu
+; /usr/include
+;"
+;                  )))
+;
+;
+;    (setq company-clang-arguments
+;          (mapcar(lambda (item)(concat "-I" item))
+;                 (split-string
+;                  "
+; /usr/include/c++/4.8
+;/usr/include/i386-linux-gnu/c++/4.8
+; /usr/include/c++/4.8/backward
+; /usr/lib/gcc/i686-linux-gnu/4.8/include
+; /usr/local/include
+; /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
+; /usr/include/i386-linux-gnu
+; /usr/include
+;"
+;                  )))
 
     ;; ;; auto select g++ include dir
     ;; ;; by EmingK
