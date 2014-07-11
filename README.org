@@ -211,8 +211,6 @@ C-c C-i to input the path && C-j to insert it.
 You can configure your own window transparency in .custom.el
 
 
-* My personal custom.el (OPTIONAL)
-It's publicized at [[http://blog.binchen.org/?p=430]]. It contains my personal stuff like color-theme and time locale.
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.
 Currently Emacs 23 will not support below packages:
