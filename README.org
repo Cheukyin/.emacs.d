@@ -197,10 +197,18 @@ To toggle Chinese input method (eim, for example), press `C-\` or run command `M
 ** ECB
 Make your emacs closer to IDE.
 The shortcuts for ecb have been set in init-ecb.el
+
 The layout of ECB can be modified in site-lisp/ecb/ecb-layout-defs.el
 And after you change the layout, you may `M-x ecb-byte-compile` to recompile the file
+
 If you want to activate ECB, `M-x ecb-activate` or `,ea' , then , when emacs shuts down ,
 REMEMBER TO `m-X ECB-DEACTIVATE' OR `,ED` TO SHUTDOWN ECB
+
+** Path Completion
+C-c C-i to input the path && C-j to insert it.
+
+** Transparency
+You can configure your own window transparency in .custom.el
 
 
 * My personal custom.el (OPTIONAL)
