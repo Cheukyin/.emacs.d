@@ -222,6 +222,7 @@ The default is "company-[yas] elisp error! Symbol's function definition is void:
 - Jedi
 Jedi.el is a Python auto-completion package for Emacs.
 See http://tkf.github.io/emacs-jedi/latest/
+
 Virtualenv is needed.
 Then, `M-x jedi:install-server RET
 
@@ -252,7 +253,7 @@ Goto the last point where jedi:goto-definition was called.
 - In the auto-complete-clang.el, modify the color of the "ac-clang-candidate-face" & "ac-clang-selection-face"
 - In the auto-complete-config.el, modify the color of yasnippet & gtags face.
 
--After modification, you must `M-x byte-recompile-[[file:file-path]]
+-After modification, you must `M-x byte-recompile-file`
 `
 
 * About Emacs23
