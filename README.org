@@ -254,7 +254,6 @@ Goto the last point where jedi:goto-definition was called.
 - In the auto-complete-config.el, modify the color of yasnippet & gtags face.
 
 - After modification, you must `M-x byte-recompile-file`
-`
 
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.
