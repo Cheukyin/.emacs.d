@@ -79,12 +79,12 @@
 ;; gtags
 
 (defface ac-gtags-candidate-face
-  '((t (:inherit ac-candidate-face :foreground "navy")))
+  '((t (:inherit ac-candidate-face :foreground "black")))
   "Face for gtags candidate"
   :group 'auto-complete)
 
 (defface ac-gtags-selection-face
-  '((t (:inherit ac-selection-face :background "navy")))
+  '((t (:inherit ac-selection-face :background "orange")))
   "Face for the gtags selected candidate."
   :group 'auto-complete)
 
@@ -103,12 +103,12 @@
 
 (defface ac-yasnippet-candidate-face
   '((t (:inherit ac-candidate-face
-                 :background "sandybrown" :foreground "black")))
+                 :background "yellow" :foreground "black")))
   "Face for yasnippet candidate."
   :group 'auto-complete)
 
 (defface ac-yasnippet-selection-face
-  '((t (:inherit ac-selection-face :background "coral3")))
+  '((t (:inherit ac-selection-face :background "orange")))
   "Face for the yasnippet selected candidate."
   :group 'auto-complete)
 

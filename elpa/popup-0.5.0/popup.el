@@ -208,7 +208,7 @@ buffer."
   :prefix "popup-")
 
 (defface popup-face
-  '((t (:background "lightgray" :foreground "black")))
+  '((t (:background "yellow" :foreground "black")))
   "Face for popup."
   :group 'popup)
 
@@ -1004,7 +1004,7 @@ HELP-DELAY is a delay of displaying helps."
 ;;; Popup Tip
 
 (defface popup-tip-face
-  '((t (:background "khaki1" :foreground "black")))
+  '((t (:background "orange" :foreground "black")))
   "Face for popup tip."
   :group 'popup)
 
@@ -1100,7 +1100,7 @@ PROMPT is a prompt string when reading events during event loop."
   :group 'popup)
 
 (defface popup-menu-selection-face
-  '((t (:background "steelblue" :foreground "white")))
+  '((t (:background "orange" :foreground "black")))
   "Face for popup menu selection."
   :group 'popup)
 

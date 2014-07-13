@@ -215,12 +215,12 @@ This variable will typically contain include paths, e.g., ( \"-I~/MyProject\", \
 
 
 (defface ac-clang-candidate-face
-  '((t (:background "lightgray" :foreground "navy")))
+  '((t (:background "yellow" :foreground "black")))
   "Face for clang candidate"
   :group 'auto-complete)
 
 (defface ac-clang-selection-face
-  '((t (:background "navy" :foreground "white")))
+  '((t (:background "orange" :foreground "black")))
   "Face for the clang selected candidate."
   :group 'auto-complete)
 
