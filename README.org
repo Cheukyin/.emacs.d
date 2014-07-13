@@ -255,6 +255,9 @@ Goto the last point where jedi:goto-definition was called.
 
 - After modification, you must `M-x byte-recompile-file`
 
+** Code Map
+- M-x minimap-mode
+
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.
 Currently Emacs 23 will not support below packages:

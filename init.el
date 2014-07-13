@@ -148,7 +148,7 @@
 ;(require 'init-gdb-gui)
 (require 'init-smooth-scroll)
 (require 'init-jedi)
-(add-to-list 'load-path "/home/cheukyin/.emacs.d/site-lisp/popup-0.5.0/")
+(require 'init-minimap)
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
  ;;----------------------------------------------------------------------------
@@ -172,13 +172,15 @@
      (time-to-seconds (time-since emacs-load-start-time)))
     )
 
- (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-  '(bmkp-last-as-first-bookmark-file "~/.emacs.bmk")
+ 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(bmkp-last-as-first-bookmark-file "~/.emacs.bmk")
  '(ecb-options-version "2.40")
+ '(minimap-highlight-line nil)
  '(safe-local-variable-values (quote ((emacs-lisp-docstring-fill-column . 75) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby"))))
  '(session-use-package t nil (session)))
 (custom-set-faces
