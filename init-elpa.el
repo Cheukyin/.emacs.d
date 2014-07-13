@@ -273,6 +273,10 @@ ARCHIVE is the string name of the package archive.")
 (require-package 'fakir)
 (require-package 'elnode)
 (require-package 'evil-matchit '(1 2 9) nil)
+
+;(require-package 'jedi)
+(require-package 'auto-complete-clang)
+
 (if *emacs24* (require-package 'anaconda-mode))
 (require-package 'quack) ;; for scheme
 

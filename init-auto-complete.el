@@ -3,10 +3,9 @@
 ;;;if you want to change the color of the popup menu,you can search "candidate-face" && "selection-face"
 ;;;in auto-complete-config.el && auto-complete-clang.el and modify it.
 
-(add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete-1.3.1")
 (require 'auto-complete)
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete-1.3.1/dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-1.4.0/dict")
 ;; (ac-config-default)
 
 (global-auto-complete-mode t)
@@ -26,7 +25,6 @@
 ;;;CPP&C Headers are found in "ac-clang-flags"
 ;;;Run  "  echo "" | g++ -v -x c++ -E - " , and you'll see the Header's Path of your Os
 
-(add-to-list 'load-path "~/.emacs.d/site-lisp/auto-complete-clang")
 (require 'auto-complete-clang)
 (setq ac-auto-start t)
 (setq ac-quick-help-delay 0.5)

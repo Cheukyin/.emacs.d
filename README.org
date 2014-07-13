@@ -213,8 +213,30 @@ You can configure your own window transparency in .custom.el
 ** Clang-Completion
 You can use company-mode or auto-complete-mode.
 Comment out the "init-company" or "init-auto-complete" in init.el to choose either.
-The default is "company-mode"
+The default is "company-[yas] elisp error! Symbol's function definition is void: ca-with-comment"
 
+** Python
+- Grammar flycheck
+`M-x python-check
+
+- Jedi
+Jedi.el is a Python auto-completion package for Emacs.
+See http://tkf.github.io/emacs-jedi/latest/
+Virtualenv is needed.
+Then, `M-x jedi:install-server RET
+
+<C-tab> jedi:complete
+Complete code at point.
+
+C-c ? jedi:show-doc
+Show the documentation of the object at point.
+
+C-c . jedi:goto-definition
+Goto the definition of the object at point.
+
+C-c , jedi:goto-definition-pop-marker
+Goto the last point where jedi:goto-definition was called.
+  
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.
 Currently Emacs 23 will not support below packages:
