@@ -120,7 +120,7 @@
 (require 'init-emacspeak)
 (require 'init-pomodoro)
 (require 'init-moz)
-(require 'init-gtags)
+;; (require 'init-gtags)
 ;; use evil mode (vi key binding)
 (require 'init-evil)
 (require 'init-misc)
@@ -149,6 +149,9 @@
 (require 'init-smooth-scroll)
 (require 'init-jedi)
 (require 'init-minimap)
+;; (require 'init-ascope)
+(require 'init-xcscope)
+
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
  ;;----------------------------------------------------------------------------

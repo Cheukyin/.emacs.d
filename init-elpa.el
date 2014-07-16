@@ -276,6 +276,7 @@ ARCHIVE is the string name of the package archive.")
 
 ;(require-package 'jedi)
 (require-package 'auto-complete-clang)
+(require-package 'xcscope)
 
 (if *emacs24* (require-package 'anaconda-mode))
 (require-package 'quack) ;; for scheme
