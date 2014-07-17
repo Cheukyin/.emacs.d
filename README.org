@@ -197,6 +197,11 @@ To toggle Chinese input method (eim, for example), press `C-\` or run command `M
 - (C-x 4 u) to undo the window-operation
 - (C-x 4 r) to redo the window-operation
 
+
+** Version Controll
+- Magit
+  Install magit , then M-x magit-blahblah....
+
 ** evil-leader
    Configure your shotcuts in init-evil-leader.el.
 
