@@ -29,6 +29,8 @@
 (setq ac-auto-start t)
 (setq ac-quick-help-delay 0.5)
 
+(setq ac-delay 0.5)
+
 (defun my-ac-config ()
   (setq ac-clang-flags
         (mapcar(lambda (item)(concat "-I" item))
