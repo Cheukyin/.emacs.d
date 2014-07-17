@@ -260,7 +260,7 @@ Goto the last point where jedi:goto-definition was called.
 
 
 ** Source Reading
-1 xcscope.el
+1. xcscope.el
  - n/p navigates over individual results
  - k kills individual results
 
@@ -316,6 +316,10 @@ These pertain to cscope database maintenance:
  | C-c s T | Locate this buffer's cscope directory. (alternate binding: "T" --> "tell"). |
  | C-c s D | Dired this buffer's directory.                                              |
 
+
+2. CTAGs
+- ctags -R -e *.h *.cpp
+- C-] to find-definition , C-t to pop
 
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.
