@@ -216,8 +216,13 @@ And after you change the layout, you may `M-x ecb-byte-compile` to recompile the
 If you want to activate ECB, `M-x ecb-activate` or `,ea' , then , when emacs shuts down ,
 REMEMBER TO `m-X ECB-DEACTIVATE' OR `,ED` TO SHUTDOWN ECB
 
+
+** Word Completion
+- type some prefix characters, then M-/ 
+
 ** Path Completion
-C-c C-i to input the path && C-j to insert it.
+- C-c C-i to input the path && C-j to insert it.
+- type some prefix characters, then M-/ 
 
 ** Transparency
 You can configure your own window transparency in .custom.el
