@@ -190,6 +190,13 @@ If you use `gnus` for email (Gmail, for example). Check ~/.emacs.d/init-gnus.el 
 
 To toggle Chinese input method (eim, for example), press `C-\` or run command `M-x toggle-input-method`.
 
+** Mutlti-Window WorkingFlow
+- M-o to show the window-number
+- M-(num) to switch to the (num)th window
+- (C-x 1) to minimize the current window
+- (C-x 4 u) to undo the window-operation
+- (C-x 4 r) to redo the window-operation
+
 ** evil-leader
    Configure your shotcuts in init-evil-leader.el.
 
