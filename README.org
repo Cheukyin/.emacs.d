@@ -258,14 +258,18 @@ Goto the last point where jedi:goto-definition was called.
 
 ** Auto-completion Popup Face
 - In the elpa/popup/popup.el,modify the color of the "popup-face" & "popup-menu-selection-face" "popup-tip-face"
+
+#+BEGIN_SRC elisp
    (defface popup-face
-  '((t (:background "yellow" :foreground "black")))
+  '((t (:background "yellow" :foreground "black"))))
   
    (defface popup-menu-selection-face
-  '((t (:background "orange" :foreground "black")))
+  '((t (:background "orange" :foreground "black"))))
 
    (defface popup-tip-face
-  '((t (:background "orange" :foreground "black")))
+  '((t (:background "orange" :foreground "black"))))
+#+END_SRC
+
 
 - In the auto-complete-clang.el, modify the color of the "ac-clang-candidate-face" & "ac-clang-selection-face"
 - In the auto-complete-config.el, modify the color of yasnippet & gtags face.
@@ -335,8 +339,8 @@ These pertain to cscope database maintenance:
 
 
 2. CTAGs
-- ctags -R -e *.h *.cpp
-- C-] to find-definition , C-t to pop
+   - ctags -R -e *.h *.cpp
+   - C-] to find-definition , C-t to pop
 
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.

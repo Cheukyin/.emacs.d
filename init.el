@@ -151,6 +151,7 @@
 (require 'init-minimap)
 ;; (require 'init-ascope)
 (require 'init-xcscope)
+(require 'init-org-jekyll)
 
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
