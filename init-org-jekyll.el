@@ -1,5 +1,7 @@
 (setq org-src-fontify-natively t)
 
+(setq org-export-with-sub-superscripts nil)
+
 (setq org-publish-project-alist
       '(
         ("jekyll-cheukyin-github-io" ;; settings for cute-jumper.github.io
@@ -7,15 +9,15 @@
          :base-extension "org"
          :publishing-directory "~/Cheukyin.github.io/"
          :recursive t
-         :publishing-function org-publish-org-to-html
+         :publishing-function org-html-publish-to-html
          :with-toc nil
          :headline-levels 4
          :auto-preamble nil
          :auto-sitemap nil
-         :html-extension "html"
+         :html-extension "md"
          :table-of-contents nil
          :section-numbers t
-         :style "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/themes/havee/css/style.css\" />"
+         :html_head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/themes/havee/css/style.css\" />"
          :body-only t)
         ))
 
