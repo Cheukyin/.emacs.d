@@ -1,6 +1,6 @@
 (setq org-src-fontify-natively t)
 
-(setq org-export-with-sub-superscripts nil)
+;; (setq org-export-with-sub-superscripts nil)
 
 (setq org-publish-project-alist
       '(

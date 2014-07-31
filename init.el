@@ -185,6 +185,7 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.bmk")
  '(ecb-options-version "2.40")
  '(minimap-highlight-line nil)
+ '(org-use-sub-superscripts (quote {}))
  '(safe-local-variable-values (quote ((emacs-lisp-docstring-fill-column . 75) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby"))))
  '(session-use-package t nil (session)))
 (custom-set-faces
