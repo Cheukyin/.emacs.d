@@ -1,0 +1,4 @@
+#name : Org SHORT-HTML
+#contributor : Cheukyin Yip <cheukyinyip0077@gmail.net>
+# --
+ @@html:<$1>@@$2@@html:</$1>@@ $0
