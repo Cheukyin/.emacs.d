@@ -215,3 +215,5 @@
             (if (derived-mode-p 'c-mode 'c++-mode)
                 (cppcm-reload-all)
               )))
+
+(setq debug-on-error t)
