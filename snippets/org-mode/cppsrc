@@ -1,0 +1,6 @@
+#name : CPP Source Code Block
+#contributor : Cheukyin <cheukyinyip0077@gmail.com>
+# --
+#+BEGIN_SRC C++ :includes '(<vector> <numeric> <iostream>) :flags -std=c++11
+$0$>
+#+END_SRC$>
