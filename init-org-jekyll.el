@@ -43,7 +43,7 @@
 (defvar jekyll-post-ext ".org"
   "File extension of Jekyll posts.")
 (defvar jekyll-post-template
-  "#+BEGIN_HTML\n---\nlayout: post\ntitle: %s\nexcerpt: \nkeywords: \"\"\ncategories: \ntags: []\n---\n{%% include JB/setup %%}\n#+END_HTML\n\n#+BEGIN_HTML\n<!-- more-forword -->\n#+END_HTML\n\n* \n\n#+BEGIN_HTML\n<!-- more -->\n#+END_HTML\n"
+  "#+BEGIN_HTML\n---\nlayout: post\ntitle: %s\nexcerpt: \nkeywords: \"\"\ncategories: \ntags: []\n---\n{%% include JB/setup %%}\n#+END_HTML\n\n* \n\n\n#+BEGIN_HTML\n<!-- more-forword -->\n#+END_HTML\n\n\n#+BEGIN_HTML\n<!-- more -->\n#+END_HTML\n"
   "Default template for Jekyll posts. %s will be replace by the post title.")
 
 (defun jekyll-make-slug (s)
