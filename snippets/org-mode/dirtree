@@ -1,0 +1,11 @@
+#name : Insert a directory subtree in org-mode
+#contributor : Jonathan Arkell <jonnay@jonnay.net>
+# --
+#+BEGIN_COMMENT
+
+#+BEGIN_SRC sh :exports result :results output :eval no-export
+echo "Directory structure:"
+tree  -L 2 $1
+#+END_SRC
+#+END_COMMENT
+$0
