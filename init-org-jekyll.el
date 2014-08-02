@@ -27,7 +27,7 @@
          :headline-levels 4
          :auto-preamble nil
          :auto-sitemap nil
-         :html-extension "md"
+         :html-extension "html"
          :table-of-contents nil
          :section-numbers t
          :html_head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/themes/havee/css/style.css\" />"
