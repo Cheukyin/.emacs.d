@@ -17,7 +17,7 @@
 
 (setq org-publish-project-alist
       '(
-        ("jekyll-cheukyin-github-io" ;; settings for cute-jumper.github.io
+        ("jekyll-cheukyin" ;; settings for cute-jumper.github.io
          :base-directory "~/Cheukyin.github.io/_org/"
          :base-extension "org"
          :publishing-directory "~/Cheukyin.github.io/"
@@ -32,6 +32,15 @@
          :section-numbers t
          :html_head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/themes/havee/css/style.css\" />"
          :body-only t)
+
+        ("org-static-cheukyin"
+          :base-directory "~/Cheukyin.github.io/_org/assets/"
+          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
+          :publishing-directory "~/Cheukyin.github.io/assets/"
+          :recursive t
+          :publishing-function org-publish-attachment)
+
+        ("jekyll-cheukyin-github-io" :components ("jekyll-cheukyin" "org-static-cheukyin"))
         ))
 
 (defvar jekyll-directory (expand-file-name "~/Cheukyin.github.io/_org/")
