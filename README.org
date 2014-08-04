@@ -118,6 +118,7 @@ These tools are *OPTIONAL*. Your Emacs will NOT crash if they are not installed.
 ** [[https://addons.mozilla.org/en-us/firefox/addon/mozrepl/][MozRepl (Firefox addon)]]
 - needed by [[http://www.emacswiki.org/emacs/MozRepl][MozRepl]]
 - used by Firefox
+- See [[https://github.com/bard/mozrepl/wiki]], after installed, firefox->tool/mozrepl/start
 
 ** [[http://ctags.sourceforge.net][CTags]]
 - it creates tags file for code navigation
