@@ -6,7 +6,7 @@
     (add-to-list 'yas/snippet-dirs my-yasnippets))
 ;; (message "yas/snippet-dirs=%s" (mapconcat 'identity yas-snippet-dirs ":"))
 
-(yas/global-mode 1)
+(yas-global-mode t)
 
 (defun my-yas-expand ()
   (interactive)
