@@ -185,6 +185,7 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.bmk")
  '(ecb-options-version "2.40")
  '(minimap-highlight-line nil)
+ '(org-export-backends (quote (ascii html icalendar latex md odt)))
  '(org-footnote-auto-adjust t)
  '(org-footnote-auto-label (quote plain))
  '(org-html-footnote-format "<sup>[%s]</sup>")
