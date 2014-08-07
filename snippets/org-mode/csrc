@@ -1,6 +1,6 @@
 #name : C Source Code Block
 #contributor : Cheukyin <cheukyinyip0077@gmail.com>
 # --
-#+BEGIN_SRC C++ :includes '(<stdio.h>) :flags -std=c99
+#+BEGIN_SRC C :includes '(<stdio.h>)
 $0$>
 #+END_SRC$>
