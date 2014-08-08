@@ -141,6 +141,7 @@ to replace the symbol under cursor"
 (setq evil-leader/leader ",")
 
 (require 'evil-leader)
+(global-evil-leader-mode)
 (evil-leader/set-key
   "as" 'ack-same
   "ac" 'ack
@@ -189,7 +190,7 @@ to replace the symbol under cursor"
   "uc" 'gud-cont
   "uf" 'gud-finish
   "W" 'save-some-buffers
-  "K" 'kill-buffer-and-window ;; "k" is preserved to replace "C-g"
+  "kb" 'kill-buffer ;; "k" is preserved to replace "C-g"
   "it" 'issue-tracker-increment-issue-id-under-cursor
   "hh" 'highlight-symbol-at-point
   "hn" 'highlight-symbol-next
@@ -210,14 +211,10 @@ to replace the symbol under cursor"
   "se" 'string-edit-at-point
   "s0" 'delete-window
   "s1" 'delete-other-windows
-  "s2" '(lambda () (interactive) (if *emacs23* (split-window-vertically) (split-window-right)))
-  "s3" '(lambda () (interactive) (if *emacs23* (split-window-horizontally) (split-window-below)))
-  "su" 'winner-undo
-  "x0" 'delete-window
-  "x1" 'delete-other-windows
-  "x2" '(lambda () (interactive) (if *emacs23* (split-window-vertically) (split-window-right)))
-  "x3" '(lambda () (interactive) (if *emacs23* (split-window-horizontally) (split-window-below)))
-  "xu" 'winner-undo
+  "wu" 'winner-undo
+  "wr" 'winner-redo
+  "vs" 'split-window-horizontally
+  "sw" 'split-window-vertically
   "to" 'toggle-web-js-offset
   "sl" 'sort-lines
   "ulr" 'uniquify-all-lines-region
@@ -256,19 +253,9 @@ to replace the symbol under cursor"
   "bh" 'buf-move-left
   "bl" 'buf-move-right
   "so" 'sos
-  "0" 'select-window-0
-  "1" 'select-window-1
-  "2" 'select-window-2
-  "3" 'select-window-3
-  "4" 'select-window-4
-  "5" 'select-window-5
-  "6" 'select-window-6
-  "7" 'select-window-7
-  "8" 'select-window-8
-  "9" 'select-window-9
   "xm" 'smex
   "xx" 'er/expand-region
-  "xf" 'ido-find-file
+  "sf" 'ido-find-file
   "xb" 'ido-switch-buffer
   "xc" 'save-buffers-kill-terminal
   "xo" 'helm-find-files
@@ -324,13 +311,18 @@ to replace the symbol under cursor"
   "z8" 'wg-switch-to-workgroup-at-index-8
   "z9" 'wg-switch-to-workgroup-at-index-9
   "zs" 'wg-save-session
-  "zb" 'wg-switch-to-buffer
+  "zs" 'wg-switch-to-buffer
   "zp" 'wg-switch-to-workgroup-left
   "zn" 'wg-switch-to-workgroup-right
   "zwu" 'wg-undo-wconfig-change
   "zwr" 'wg-redo-wconfig-change
   "zws" 'wg-save-wconfig
   "wf" 'popup-which-function
+  "bs" 'switch-to-buffer
+  "es" 'ecb-show-ecb-windows
+  "eh" 'ecb-hide-ecb-windows
+  "ea" 'ecb-activate
+  "ed" 'ecb-deactivate
   )
 ;; }}
 

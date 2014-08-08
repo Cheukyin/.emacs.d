@@ -195,8 +195,8 @@ To toggle Chinese input method (eim, for example), press `C-\` or run command `M
 - M-o to show the window-number
 - M-(num) to switch to the (num)th window
 - (C-x 1) to minimize the current window
-- (C-x 4 u) to undo the window-operation
-- (C-x 4 r) to redo the window-operation
+- (C-x 4 u) or ",wu" to undo the window-operation
+- (C-x 4 r) or ",wr" to redo the window-operation
 
 
 ** Version Controll
