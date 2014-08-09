@@ -209,7 +209,8 @@ This is usually the base name of `pyvenv-virtual-env'.")
     (pyvenv-activate (format "%s/%s"
                              (or (getenv "WORKON_HOME")
                                  "~/.virtualenvs")
-                             name))))
+                             name))
+    (jedi:stop-server)))
 
 (defun pyvenv-virtualenv-list ()
   "Prompt the user for a name in $WORKON_HOME."
