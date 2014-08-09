@@ -255,7 +255,29 @@ Goto the definition of the object at point.
 
 C-c , jedi:goto-definition-pop-marker
 Goto the last point where jedi:goto-definition was called.
-  
+
+- Pyvenv
+Jedi uses the variable `VIRTUAL_ENV` to determine which the virtualenv to use(the default is .emacs.d/.python-enviroments),
+So I use pyvenv to change the workon virtualenv.
+
+Firstly, install `virtualenvwrapper`
+
+Pust the following code in your .bashrc/.zshrc:
+#+begin_src sh
+if [ `id -u` != '0' ]; then
+export VIRTUALENV_USE_DISTRIBUTE=1        # <-- Always use pip/distribute
+export WORKON_HOME=$HOME/.virtualenvs       # <-- Where all virtualenvs will be stored
+source /usr/local/bin/virtualenvwrapper.sh
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+fi
+#+end_src
+
+mkdir .virtualenvs in you home directory, and put your virtualenv in it.
+if you virtualenvs is system-wide spreaded, you may make a symbolic link in .virtualenvs. 
+
+When you're in python-mode, Jedi uses .emacs/.python-enviroments as the default virtualenv,
+you can change it by `M-x pyvenv-workon` and choose the one you want, then `M-x jedi:stop-sever` to restart jekyll.
 
 ** Auto-completion Popup Face
 - In the elpa/popup/popup.el,modify the color of the "popup-face" & "popup-menu-selection-face" "popup-tip-face"
