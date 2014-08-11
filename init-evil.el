@@ -95,7 +95,7 @@
        (t (setq unread-command-events (append unread-command-events
                           (list evt))))))))
 
-
+(define-key evil-insert-state-map (kbd "S-<SPC>") 'toggle-input-method)
 (define-key evil-insert-state-map (kbd "M-a") 'move-beginning-of-line)
 (define-key evil-insert-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-insert-state-map (kbd "M-e") 'move-end-of-line)

@@ -189,7 +189,7 @@ You need manually `M-x list-packages` and install it or just `M-x package-refres
 
 If you use `gnus` for email (Gmail, for example). Check ~/.emacs.d/init-gnus.el which includes my most settings except my private stuff. Here is [[http://blog.binchen.org/?p=403][my Gnus tutorial]].
 
-To toggle Chinese input method (eim, for example), press `C-\` or run command `M-x toggle-input-method`.
+To toggle Chinese input method (eim, for example), press `C-\` or run command `M-x toggle-input-method`(I bind it to `C-<SPC>` in evil-insert-state)
 
 ** Mutlti-Window WorkingFlow
 - M-o to show the window-number
