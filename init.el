@@ -152,6 +152,8 @@
 (require 'init-xcscope)
 (require 'init-org-jekyll)
 
+(require 'init-rainbow)
+
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
  ;;----------------------------------------------------------------------------
