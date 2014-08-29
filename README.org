@@ -207,6 +207,30 @@ To toggle Chinese input method (eim, for example), press `C-\` or run command `M
    Configure your shotcuts in init-evil-leader.el.
 
 
+** Projectile
+Providing a nice set of features operating on a project level.See [[https://github.com/bbatsov/projectile]]
+
+Requiring find, xargs, git installed.
+
+If your project directory isn't gitted, you can ~touch .projectile~ in you project's root directory.
+
+The common commands:
+- ",pf" 'projectile-find-file
+- ",pg" 'projectile-grep
+- ",sp" 'projectile-switch-project
+- ",pd" 'projectile-find-dir-other-window
+- ",pD" 'projectile-dired
+- ",p!" 'projectile-run-shell-command-in-root
+
+If you'd like to instruct Projectile to ignore certain files in a project, when indexing it you can do so in the .projectile file by adding each path to ignore, where the paths all are relative to the root directory and start with a slash. Everything ignored should be preceded with a ~-~ sign. Alternatively, not having any prefix at all also means to ignore the directory or file pattern that follows. Here's an example for a typical Rails application:
+
+#+begin_src text
+-/log
+-/tmp
+-/vendor
+-/public/uploads
+#+end_src
+
 ** ECB
 Make your emacs closer to IDE.
 The shortcuts for ecb have been set in init-ecb.el
