@@ -319,10 +319,18 @@ to replace the symbol under cursor"
   "zws" 'wg-save-wconfig
   "wf" 'popup-which-function
   "bs" 'switch-to-buffer
+  ;ecb
   "es" 'ecb-show-ecb-windows
   "eh" 'ecb-hide-ecb-windows
   "ea" 'ecb-activate
   "ed" 'ecb-deactivate
+  ;projectile
+  "pf" 'projectile-find-file
+  "pg" 'projectile-grep
+  "sp" 'projectile-switch-project
+  "pd" 'projectile-find-dir-other-window
+  "pD" 'projectile-dired
+  "p!" 'projectile-run-shell-command-in-root
   )
 ;; }}
 
