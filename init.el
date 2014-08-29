@@ -154,6 +154,9 @@
 
 (require 'init-rainbow)
 
+(require 'init-projectile)
+(require 'init-flx-ido)
+
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
  ;;----------------------------------------------------------------------------
