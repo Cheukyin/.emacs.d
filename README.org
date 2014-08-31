@@ -328,7 +328,7 @@ you can change it by ~M-x pyvenv-workon~ and choose the one you want, _then `M-x
 
 
 ** Source Reading
-1. xcscope.el
+*** xcscope.el
  - n/p navigates over individual results
  - k kills individual results
 
@@ -385,9 +385,75 @@ These pertain to cscope database maintenance:
  | C-c s D | Dired this buffer's directory.                                              |
 
 
-2. CTAGs
-   - ctags -R -e *.h *.cpp
-   - C-] to find-definition , C-t to pop
+*** CTAGs
+  - ctags -R -e *.h *.cpp
+  - C-] to find-definition , C-t to pop
+
+*** GGtags
+To replace cscope, ~global~ is required.
+
+Before using the ggtags or helm-gtags, remember to create a GTAGS database by running gtags at your project root in terminal:
+
+#+begin_src sh
+cd /path/to/project/root
+gtags
+#+end_src
+
+If you use ggtags, you have a command for creating GTAGS database, that is ggtags-create-tags; this is recommended way when using ggtags, to let it know where the project root is.
+
+**** Basic movements
+- ~%~: move around over a balanced expression that can be a pair or a symbol
+- ~v%~: rusn mark-sexp, put mark after following expression that can be a pair or a symbol
+- ~C-M-a~: runs beginning-of-defun, which moves point to beginning of a function
+- ~C-M-e~: runs end-of-defun, which moves point to end of a function
+- ~C-M-h~: runs mark-defun, which put a region around whole current or following function
+
+**** Find definitions in current buffer
+~semantic-mode~ should be enabled. You can add it to the specific mode you want in init-ggtags.el, like this:
+#+begin_src elisp
+(add-hook 'c-mode-hook 'semantic-mode)
+(add-hook 'c++-mode-hook 'semantic-mode)
+(add-hook 'python-mode-hook 'semantic-mode)
+(add-hook 'asm-mode-hook 'semantic-mode)
+#+end_src
+
+~M-x helm-semantic-or-imenu~ or ~<evil-leader>gcd~ , please notice the "pattern: " prompt in the minibuffer, you can type ~func~ to narrow the candidates that are functions, ~class~ for that are classes and ~var~ that are variables.
+
+**** Find definitions in project
+- ~<evil-leader>gt~, which runs ~ggtags-find-tag-dwim~, this command jump to tag base on context:
+  - If the tag at point is a definition, ggtags jumps to a reference. If there is more than one reference, it displays a list of references.
+  - If the tag at point is a reference, ggtags jumps to tag definition.
+  - If the tag at point is an include header, it jumps to that header.
+	
+	~M-n~ and ~M-p~ to go to the next and previous file.
+
+	~M-<~ and ~M->~ for the first and the last.
+
+	~M-*~ to abort and go back to the location where the search was started
+
+    You can also find arbitrary tag definition when invoking ~ggtags-find-tag-dwim~ on blank space. A prompt asks you for tag pattern, which is a regexp. 
+
+- M-, , which runs ~pop-tag-mark~ to jump back to original location
+
+**** Find files in project
+If point is on an included header file, ~<evil-leader>gt~ or ~ggtags-find-tag-dwim~ automatically jumps to the file.
+
+**** View visited tags with tag stack
+~<evil-leader>gp~, which runs ~ggtags-prev-mark~
+~<evil-leader>gn~, which runs ~ggtags-next-mark~
+~<evil-leader>gsh~, which runs ~ggtags-view-tag-history~ that shows visited tags from newest to oldest, from top to bottom.
+
+**** Update Tags
+When file is saved, tags will be automatically updated. If failed, "<evil-leader>gu" to update it manually.
+
+** Source Editing
+*** Narrowing
+Narrowing means making only a text portion in current buffer visible. Narrowing is useful when you want to perform text editing on a small part of the buffer without affecting the others. For example, you want to delete all printf statements in current functions, using flush-lines command. But if you do so, you will also delete printf outside the current function, which is undesirable. By narrowing, you can safely remove all those printf and be certain that nothing else is changed accidentally.
+
+Default key bindings:
+- ~narrow-to-defun~, Narrow buffer to current function at point
+- ~narrow-to-region~
+- ~widen~, Widen buffer
 
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.
