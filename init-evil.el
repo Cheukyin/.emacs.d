@@ -229,8 +229,16 @@ to replace the symbol under cursor"
   "hf" 'find-function
   "hv" 'describe-variable
   "hb" 'helm-back-to-last-point
+
+  ;gtags
+  "gcd" 'helm-semantic-or-imenu
   "gt" 'ggtags-find-tag-dwim
   "gr" 'ggtags-find-reference
+  "gp" 'ggtags-prev-mark
+  "gn" 'ggtags-next-mark
+  "gu" 'ggtags-update-tags
+  "gsh" 'ggtags-view-tag-history
+
   "fb" 'flyspell-buffer
   "fe" 'flyspell-goto-next-error
   "fa" 'flyspell-auto-correct-word
