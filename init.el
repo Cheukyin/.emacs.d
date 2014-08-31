@@ -157,6 +157,8 @@
 (require 'init-projectile)
 (require 'init-flx-ido)
 
+(require 'init-ggtags)
+
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
  ;;----------------------------------------------------------------------------
