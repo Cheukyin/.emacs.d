@@ -35,14 +35,32 @@
   (setq ac-clang-flags
         (mapcar(lambda (item)(concat "-I" item))
                (split-string
-                "
+
+;;for i386 machines
+
+;; "
+;;  /usr/include/c++/4.8
+;; /usr/include/i386-linux-gnu/c++/4.8
+;;  /usr/include/c++/4.8/backward
+;;  /usr/lib/gcc/i686-linux-gnu/4.8/include
+;;  /usr/local/include
+;;  /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
+;;  /usr/include/i386-linux-gnu
+;;  /usr/include
+;; .
+;; ../include
+;; "
+
+;;;For x86_64 machines
+
+"
  /usr/include/c++/4.8
-/usr/include/i386-linux-gnu/c++/4.8
+ /usr/include/x86_64-linux-gnu/c++/4.8
  /usr/include/c++/4.8/backward
- /usr/lib/gcc/i686-linux-gnu/4.8/include
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include
  /usr/local/include
- /usr/lib/gcc/i686-linux-gnu/4.8/include-fixed
- /usr/include/i386-linux-gnu
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed
+ /usr/include/x86_64-linux-gnu
  /usr/include
 .
 ../include
