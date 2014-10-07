@@ -191,6 +191,7 @@
  '(bmkp-last-as-first-bookmark-file "~/.emacs.bmk")
  '(ecb-options-version "2.40")
  '(minimap-highlight-line nil)
+ '(nxml-slash-auto-complete-flag t)
  '(org-export-backends (quote (ascii html icalendar latex md odt)))
  '(org-export-with-sub-superscripts (quote {}))
  '(org-footnote-auto-adjust t)
