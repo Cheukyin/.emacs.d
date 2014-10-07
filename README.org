@@ -191,6 +191,13 @@ If you use `gnus` for email (Gmail, for example). Check ~/.emacs.d/init-gnus.el 
 
 To toggle Chinese input method (eim, for example), press `C-\` or run command `M-x toggle-input-method`(I bind it to `C-<SPC>` in evil-insert-state)
 
+** XML
+- completion: `C-M-i`
+- keep tags balanced and input the end-tag at the same time as the start-tag: `C-c C-i`
+- for block-level elements: `C-c C-b`
+- `/` automatically inserts the rest of the end-tag when it occurs after `<`
+
+
 ** Mutlti-Window WorkingFlow
 - M-o to show the window-number
 - M-(num) to switch to the (num)th window
