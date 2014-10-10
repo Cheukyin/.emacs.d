@@ -339,6 +339,9 @@ to replace the symbol under cursor"
   "pd" 'projectile-find-dir-other-window
   "pD" 'projectile-dired
   "p!" 'projectile-run-shell-command-in-root
+
+  ;compile
+  "cp" 'compile
   )
 ;; }}
 
