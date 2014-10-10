@@ -462,6 +462,8 @@ Default key bindings:
 - ~narrow-to-region~
 - ~widen~, Widen buffer
 
+** Source Compilation
+When you want to compile the source code, you can type `M-x compile` or type `,cp`, then type the compiling command, such as `gcc blabla` for c/c++ source code, or `python blabla` for python code.
 * About Emacs23
 Emacs23 support will *be dropped* in one year <2015-04-24 Thu>.
 Currently Emacs 23 will not support below packages:
