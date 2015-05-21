@@ -8,6 +8,7 @@
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
 
+(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
 (add-hook 'latex-mode-hook 'turn-on-cdlatex)   ; with Emacs latex mode
 
 (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
