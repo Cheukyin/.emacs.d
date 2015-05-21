@@ -161,6 +161,8 @@
 
 (require 'init-flycheck)
 
+(require 'init-auctex)
+
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
  ;;----------------------------------------------------------------------------
