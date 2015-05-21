@@ -38,4 +38,6 @@
 (add-hook 'laTeX-mode-hook
           (lambda () (TeX-fold-mode 1))); Automatically activate TeX-fold-mode.
 
+(setq-default TeX-engine 'xetex)
+
 (provide 'init-auctex)
