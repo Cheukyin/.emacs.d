@@ -12,10 +12,17 @@
 (add-hook 'latex-mode-hook 'turn-on-cdlatex)   ; with Emacs latex mode
 
 (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
+(add-hook 'laTeX-mode-hook 'auto-fill-mode)
+
 (add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'laTeX-mode-hook 'flyspell-mode)
+
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(add-hook 'laTeX-mode-hook 'LaTeX-math-mode)
 
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(add-hook 'laTeX-mode-hook 'turn-on-reftex)
+
 (setq reftex-plug-into-AUCTeX t)
 
 (setq TeX-PDF-mode t)
@@ -27,6 +34,8 @@
 ;; In this way, you can `C-c C-o C-b` to fold every item in the buffer
 ;; and use mouse-click to unfold it
 (add-hook 'LaTeX-mode-hook
+          (lambda () (TeX-fold-mode 1))); Automatically activate TeX-fold-mode.
+(add-hook 'laTeX-mode-hook
           (lambda () (TeX-fold-mode 1))); Automatically activate TeX-fold-mode.
 
 (provide 'init-auctex)
