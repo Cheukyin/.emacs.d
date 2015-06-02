@@ -163,6 +163,8 @@
 
 (require 'init-auctex)
 
+(require 'init-sml)
+
  ;;----------------------------------------------------------------------------
  ;; Variables configured via the interactive 'customize' interface
  ;;----------------------------------------------------------------------------
